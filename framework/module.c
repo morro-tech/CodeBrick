@@ -91,14 +91,14 @@ void module_task_init(void)
  */
 void module_task_poll(void)
 {
-	task_item_t *t;
-	for (t = (task_item_t *)task_tbl_start; 
+    task_item_t *t;
+    for (t = (task_item_t *)task_tbl_start; 
          t < (task_item_t*)task_tbl_end; t++) {      
         if  ((get_tick() - *t->timer) >= t->interval) {
             *t->timer = get_tick();
             t->handle();
         }
-	} 
+    } 
 }
 
 

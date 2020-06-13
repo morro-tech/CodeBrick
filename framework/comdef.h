@@ -3,7 +3,7 @@
 *
 * Change Logs: 
 * Date           Author       Notes 
-* 2018-03-18     Ä§ÂÞ²·Ê¿     Initial version. 
+* 2018-03-18     Morro     Initial version. 
 *******************************************************************************/
 
 #ifndef _COM_DEF_H_

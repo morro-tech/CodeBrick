@@ -3,7 +3,7 @@
 *
 * Change Logs: 
 * Date           Author       Notes 
-* 2017-03-19     Ä§ÂÞ²·Ê¿     Initial version. 
+* 2017-03-19     Morro        Initial version. 
 *******************************************************************************/
 #include "queue.h"
 #include <stddef.h>

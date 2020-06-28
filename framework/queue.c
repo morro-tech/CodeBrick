@@ -1,10 +1,14 @@
-/*******************************************************************************
-* @brief         通用队列
-*
-* Change Logs: 
-* Date           Author       Notes 
-* 2017-03-19     Morro        Initial version. 
-*******************************************************************************/
+/******************************************************************************
+ * @brief    通用队列管理
+ *
+ * Copyright (c) 2017~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2017-03-19     Morro        Initial version. 
+ ******************************************************************************/
 #include "queue.h"
 #include <stddef.h>
 #include <string.h>
@@ -41,7 +45,7 @@ bool queue_is_empty(queue_t *q)
  */
 bool queue_is_full(queue_t *q)
 {
-    return (q->rear + 1) % q->len == q->front;
+    return (q->rear + 1) % q->size == q->front;
 }
 
 /* @brief      入队(添加元素至队尾)
@@ -54,7 +58,7 @@ bool queue_put(queue_t *q,  void *element)
         return false;
     memcpy((unsigned char *)q->base + q->rear * q->element_size, element, 
            q->element_size);
-    q->rear = (q->rear + 1) % q->len;
+    q->rear = (q->rear + 1) % q->size;
     return true;
 }
 
@@ -68,7 +72,7 @@ bool queue_get(queue_t *q,  void *element)
         return false;   
     memcpy(element, (unsigned char *)q->base + q->front * q->element_size,
           q->element_size);
-    q->front = (q->front + 1) % q->len;
+    q->front = (q->front + 1) % q->size;
     return true;
 }
 
@@ -92,16 +96,16 @@ bool queue_del(queue_t *q)
 {
     if (queue_is_empty(q))
         return false;   
-    q->front = (q->front + 1) % q->len;
+    q->front = (q->front + 1) % q->size;
     return true;
 }
 
 /* @brief      获取队列元素个数
  * @return    队列元素个数
  */
-int queue_len(queue_t *q)
+int queue_size(queue_t *q)
 {
-    return (q->rear + q->len - q->front ) % q->len;
+    return (q->rear + q->size - q->front ) % q->size;
 }
 
 /* @brief      清空队列

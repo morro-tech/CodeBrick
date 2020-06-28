@@ -1,10 +1,14 @@
 /*******************************************************************************
-* @brief	通用宏定义
-*
-* Change Logs: 
-* Date           Author       Notes 
-* 2018-03-18     Morro     Initial version. 
-*******************************************************************************/
+ * @brief	通用宏定义
+ *
+ * Copyright (c) 2018~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2018-03-18     Morro     Initial version. 
+ ******************************************************************************/
 
 #ifndef _COM_DEF_H_
 #define _COM_DEF_H_

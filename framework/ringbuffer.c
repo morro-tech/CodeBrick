@@ -1,11 +1,14 @@
-/*******************************************************************************
-* @file		ringbuffer.c
-* @brief	环形缓冲区管理(参考linux/kfifo)
-* 
-* Change Logs: 
-* Date           Author       Notes 
-* 2016-05-30     Morro        初版
-*******************************************************************************/
+/******************************************************************************
+ * @brief    环形缓冲区管理(参考linux/kfifo)
+ *
+ * Copyright (c) 2016~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2016-05-30     Morro        初版完成
+ ******************************************************************************/
 #include "ringbuffer.h"
 #include <string.h>
 #include <stddef.h>
@@ -58,7 +61,7 @@ unsigned int ring_buf_put(ring_buf_t *r,unsigned char *buf,unsigned int len)
     unsigned int left;
     left = r->size + r->front - r->rear;
     len  = min(len , left);
-    i    = min(len, r->size - (r->rear & r->size - 1));    
+    i    = min(len, r->size - (r->rear & r->size - 1));   
     memcpy(r->buf + (r->rear & r->size - 1), buf, i); 
     memcpy(r->buf, buf + i, len - i);
     r->rear += len;     

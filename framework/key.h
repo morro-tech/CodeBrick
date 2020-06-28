@@ -1,13 +1,19 @@
-/*******************************************************************************
-* @brief         独立按键管理
-*
-* Change Logs 
-* Date           Author       Notes 
-* 2017-08-10     Morro        初始版
-*******************************************************************************/
+/******************************************************************************
+ * @brief    独立按键管理
+ *
+ * Copyright (c) 2017~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2017-08-10     Morro        Initial version
+ ******************************************************************************/
 
 #ifndef _KEY_H_
 #define _KEY_H_
+
+#include "module.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -21,8 +27,7 @@ extern "C" {
 #define KEY_LONG_UP         2                      /*长按释放 ----------------*/
 
 /*按键管理器 -----------------------------------------------------------------*/
-typedef struct key_t
-{
+typedef struct key_t {
     /*
      *@brief     按键触发读取接口
      *@param[in] none
@@ -40,9 +45,9 @@ typedef struct key_t
     struct key_t *next;                            /*连接下一个按键并构成链表 */
 }key_t;
 
-int  key_create(key_t *key, int (*readkey)(void), 
-                void (*event)(int type, unsigned int duration));
-void key_scan_process(void);
+bool key_create(key_t *key, int (*readkey)(void),  /*创建按键*/
+               void (*event)(int type, unsigned int duration));
+void key_scan_process(void);                       /*按键扫描处理*/
 
 #ifdef __cplusplus
 }

@@ -1,28 +1,45 @@
-/*******************************************************************************
-* @brief         具有闪烁特性(dev, motor, buzzer)的设备(dev, motor, buzzer)管理
-*
-* Change Logs: 
-* Date           Author       Notes 
-* 2019-04-01     Morro        Initial version. 
-*******************************************************************************/
-#include "public.h"
-#include "blink.h"                       /*get_tick()*/
+/******************************************************************************
+ * @brief    具有闪烁特性(dev, motor, buzzer)的设备(dev, motor, buzzer)管理
+ *
+ * Copyright (c) 2019, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2019-04-01     Morro        Initial version
+ ******************************************************************************/
+#include "module.h"                      /*get_tick()*/
+#include "blink.h"                       
 #include <stddef.h>
 #include <string.h>
 
-#ifdef __CC_ARM                			 /* ARM Compiler 	*/	
-    extern blink_dev_t        __section_blink_dev$$Base;           
-    extern blink_dev_t        __section_blink_dev$$Limit;		
-	#define blink_tbl_start    &__section_blink_dev$$Base    
-	#define blink_tbl_end      &__section_blink_dev$$Limit 
-#elif defined (__ICCARM__)        		/* for IAR Compiler */
-	#pragma section="__section_blink_dev"
-	#define blink_tbl_start  __section_begin("__section_blink_dev")        
-	#define blink_tbl_end    __section_end("__section_blink_dev")     
-#endif
+static blink_dev_t *head = NULL;         /*头结点 -*/
 
 /*
- * @brief       
+ * @brief       创建blink设备
+ * @param[in]   dev    - 设备
+ * @param[in]   ioctrl - IO控制函数
+ * @return      none
+ */
+void blink_dev_create(blink_dev_t *dev, void (*ioctrl)(bool enable))
+{
+    blink_dev_t *tail = head;  
+    memset(dev, 0, sizeof(blink_dev_t));
+    dev->ioctrl = ioctrl;    
+    dev->next = NULL;
+    if (head == NULL) {
+        head = dev;
+        return;
+    }
+    while (tail->next != NULL)
+        tail = tail->next;
+    tail->next = dev;
+}
+
+
+/* 
+ * @brief       blink 设备控制
  * @param[in]   name    - 设备名称
  * @param[in]   ontime - 开启时间(如果该值为0则永久关闭)
  * @param[in]   offtime- 关闭时间
@@ -43,36 +60,33 @@ void blink_dev_ctrl(blink_dev_t *dev, int ontime, int offtime, int repeats)
 }
 
 /*
- * @brief       设备管理
+ * @brief       blink设备管理
  * @param[in]   none
  * @return      none
  */
 void blink_dev_process(void)
 {
-    blink_dev_t *s, *e;
-    s = (blink_dev_t *)blink_tbl_start;
-    e = (blink_dev_t *)blink_tbl_end;
-
-    for (; s < e; s++) {
-        if (s->ontime == 0) {
+    blink_dev_t *dev;
+    for (dev = head; dev != NULL; dev = dev->next) {
+        if (dev->ontime == 0) {
             continue;
-        } else if (get_tick() - s->tick < s->ontime) {
-            if (!s->enable) {
-                s->enable = true;
-                s->ioctrl(true);
+        } else if (get_tick() - dev->tick < dev->ontime) {
+            if (!dev->enable) {
+                dev->enable = true;
+                dev->ioctrl(true);
             }
-        } else if(get_tick() - s->tick < s->offtime) {
-            if (s->enable) {
-                s->enable = false;
-                s->ioctrl(false);
+        } else if(get_tick() - dev->tick < dev->offtime) {
+            if (dev->enable) {
+                dev->enable = false;
+                dev->ioctrl(false);
             }
         } else {
-            s->tick = get_tick();
-			if (s->repeats) {
-				if (++s->count >= s->repeats) {
-					s->ontime = 0;
-					s->ioctrl(false);
-					s->enable = false;
+            dev->tick = get_tick();
+			if (dev->repeats) {
+				if (++dev->count >= dev->repeats) {
+					dev->ontime = 0;
+					dev->ioctrl(false);
+					dev->enable = false;
 				}
 			}
         }

@@ -60,6 +60,7 @@ task_register("blink", blink_dev_process, 50);  //50ms轮询1次
 ```
 ***使用例子,以LED为例***
 ```
+blink_dev_t led;                             //定义led设备
 
 /*
  *@brief     红色LED控制(GPIOA.8)
@@ -73,15 +74,14 @@ static void led_ctrl(int on)
         GPIOA->ODR &= ~(1 << 8);
 }
 
-blink_dev_register(led, led_ctrl);      //注册led设备
-
-
 /*
  *@brief     led初始化程序
  */
 void led_init(void)
 {
     led_io_init(void);                  //led io初始化
+    blink_dev_create(&led, led_ctrl);   //创建led设备
+    
     blink_dev_ctrl(&led, 50, 100, 0);   //快闪(50ms亮, 100ms灭)
 }
 ```

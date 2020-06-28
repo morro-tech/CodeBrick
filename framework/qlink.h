@@ -1,11 +1,14 @@
 /*******************************************************************************
-* @brief	      链式队列(queue link)管理
-*
-* Change Logs 
-* Date           Author       Notes 
-* 2016-06-24     Morro        初始版
-* 2018-03-17     Morro        增加队列元素统计功能
-*******************************************************************************/
+ * @brief	      链式队列(queue link)管理
+ * Copyright (c) 2016~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs 
+ * Date           Author       Notes 
+ * 2016-06-24     Morro        初始版
+ * 2018-03-17     Morro        增加队列元素统计功能
+ ******************************************************************************/
 #ifndef _QLINK_H_
 #define _QLINK_H_
 

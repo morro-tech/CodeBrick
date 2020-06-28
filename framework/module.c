@@ -1,11 +1,16 @@
-/*******************************************************************************
-* @brief	模块管理(包含系统初始化,时间片轮询系统)
-*
-* Change Logs: 
-* Date           Author       Notes 
-* 2016-06-24     Morro        初始版
-* 2020-05-23     Morro        增加匿名类型,防止模块重名错误
-*******************************************************************************/
+/******************************************************************************
+ * @brief    系统模块管理(包含系统初始化,时间片轮询系统)
+ *
+ * Copyright (c) 2016~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2016-06-24     Morro        初版完成
+ * 2020-05-23     Morro        增加匿名类型,防止模块重名错误
+ * 2020-06-28     Morro        增加is_timeout超时判断接口
+ ******************************************************************************/
 #include "module.h"
  
 /*
@@ -45,7 +50,7 @@
 static volatile unsigned int tick;               //系统滴答计时
 
 /*
- * @brief       增加系统节拍数(定时器中断中调用)
+ * @brief       增加系统节拍数(定时器中断中调用,1ms 1次)
  */
 void systick_increase(void)
 {
@@ -58,6 +63,16 @@ void systick_increase(void)
 unsigned int get_tick(void)
 {
 	return tick;
+}
+
+/*
+ * @brief       超时判断
+ * @param[in]   start   - 起始时间
+ * @param[in]   timeout - 超时时间(ms)
+ */
+bool is_timeout(unsigned int start, unsigned int timeout)
+{
+    return get_tick() - start > timeout;
 }
 
 

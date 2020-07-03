@@ -1992,6 +1992,12 @@
   </group>
   <group>
     <name>user</name>
+    <group>
+      <name>module</name>
+      <file>
+        <name>$PROJ_DIR$\..\user\module\keywork.c</name>
+      </file>
+    </group>
     <file>
       <name>$PROJ_DIR$\..\user\config.h</name>
     </file>
@@ -2003,9 +2009,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\user\platform.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\user\platform.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\user\public.c</name>

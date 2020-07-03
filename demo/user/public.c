@@ -18,13 +18,30 @@
 void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode,GPIOPuPd_TypeDef PuPd,
                uint32_t Pins)
 {
+    uint32_t         clock;
     GPIO_InitTypeDef config = {0};
     config.GPIO_Pin   = Pins;
     config.GPIO_Mode  = Mode;
     config.GPIO_OType = GPIO_OType_PP;
     config.GPIO_Speed = GPIO_Speed_50MHz;
     config.GPIO_PuPd  = PuPd;
-    GPIO_Init(GPIOx, &config);     
+    GPIO_Init(GPIOx, &config);
+    
+    /*´ò¿ªGPIOÊ±ÖÓ*/
+    if (GPIOx == GPIOA)
+        clock = RCC_AHB1Periph_GPIOA;
+    else if (GPIOx == GPIOB)
+        clock = RCC_AHB1Periph_GPIOB;
+    else if (GPIOx == GPIOC)
+        clock = RCC_AHB1Periph_GPIOC;
+    else if (GPIOx == GPIOD)
+        clock = RCC_AHB1Periph_GPIOD;  
+    else if (GPIOx == GPIOE)
+        clock = RCC_AHB1Periph_GPIOE;   
+    else if (GPIOx == GPIOF)
+        clock = RCC_AHB1Periph_GPIOF;
+    
+    RCC_AHB1PeriphClockCmd(clock, ENABLE);
 }
 
 

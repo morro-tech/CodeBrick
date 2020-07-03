@@ -92,7 +92,7 @@ void led_ctrl(led_type type, int mode, int reapeat)
         break;
     case LED_MODE_SLOW:
         ontime  = 500;
-        ontime  = 1000;
+        offtime = 1000;
         break;        
     }
     blink_dev_ctrl(&led[type], ontime, offtime, reapeat);

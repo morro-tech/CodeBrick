@@ -1,0 +1,488 @@
+Dependencies for Project 'codebrick', Target 'codebrick': (DO NOT MODIFY !)
+F (..\lib\CMSIS\STM32F4xx\Source\arm\startup_stm32f4xx.s)(0x5F007B44)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx--list .\list\startup_stm32f4xx.lst --xref -o .\obj\startup_stm32f4xx.o --depend .\obj\startup_stm32f4xx.d)
+F (..\driver\src\mcu_flash.c)(0x5F01D2A6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\mcu_flash.o --omf_browse .\obj\mcu_flash.crf --depend .\obj\mcu_flash.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\driver\inc\mcu_flash.h)(0x5F048B5F)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\driver\src\tty.c)(0x5F007B43)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\tty.o --omf_browse .\obj\tty.crf --depend .\obj\tty.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\ringbuffer.h)(0x5F007B43)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\driver\inc\tty.h)(0x5F04887D)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\public.h)(0x5F0488F6)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\framework\blink.c)(0x5F007B43)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\blink.o --omf_browse .\obj\blink.crf --depend .\obj\blink.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\blink.h)(0x5F007B43)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\framework\key.c)(0x5F007B43)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\key.o --omf_browse .\obj\key.crf --depend .\obj\key.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\key.h)(0x5F007B43)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+F (..\framework\module.c)(0x5F087B2A)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\module.o --omf_browse .\obj\module.crf --depend .\obj\module.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+F (..\framework\queue.c)(0x5F048A85)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\queue.o --omf_browse .\obj\queue.crf --depend .\obj\queue.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\queue.h)(0x5F007B43)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\framework\ringbuffer.c)(0x5F048B5F)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\ringbuffer.o --omf_browse .\obj\ringbuffer.crf --depend .\obj\ringbuffer.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\ringbuffer.h)(0x5F007B43)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+F (..\lib\CMSIS\STM32F4xx\Source\system_stm32f4xx.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\system_stm32f4xx.o --omf_browse .\obj\system_stm32f4xx.crf --depend .\obj\system_stm32f4xx.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\misc.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\misc.o --omf_browse .\obj\misc.crf --depend .\obj\misc.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_exti.o --omf_browse .\obj\stm32f4xx_exti.crf --depend .\obj\stm32f4xx_exti.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_flash.o --omf_browse .\obj\stm32f4xx_flash.crf --depend .\obj\stm32f4xx_flash.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_gpio.o --omf_browse .\obj\stm32f4xx_gpio.crf --depend .\obj\stm32f4xx_gpio.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_iwdg.o --omf_browse .\obj\stm32f4xx_iwdg.crf --depend .\obj\stm32f4xx_iwdg.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_pwr.o --omf_browse .\obj\stm32f4xx_pwr.crf --depend .\obj\stm32f4xx_pwr.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_rcc.o --omf_browse .\obj\stm32f4xx_rcc.crf --depend .\obj\stm32f4xx_rcc.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_rtc.o --omf_browse .\obj\stm32f4xx_rtc.crf --depend .\obj\stm32f4xx_rtc.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_spi.o --omf_browse .\obj\stm32f4xx_spi.crf --depend .\obj\stm32f4xx_spi.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c)(0x5F007B45)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_syscfg.o --omf_browse .\obj\stm32f4xx_syscfg.crf --depend .\obj\stm32f4xx_syscfg.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c)(0x5F007B46)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_tim.o --omf_browse .\obj\stm32f4xx_tim.crf --depend .\obj\stm32f4xx_tim.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\lib\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c)(0x5F007B46)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_usart.o --omf_browse .\obj\stm32f4xx_usart.crf --depend .\obj\stm32f4xx_usart.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\user\led.c)(0x5F05D2FC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\led.o --omf_browse .\obj\led.crf --depend .\obj\led.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\blink.h)(0x5F007B43)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\public.h)(0x5F0488F6)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\led.h)(0x5F0489AA)
+F (..\user\main.c)(0x5F05CDAD)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\user\platform.c)(0x5F091F7F)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\platform.o --omf_browse .\obj\platform.crf --depend .\obj\platform.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\public.h)(0x5F0488F6)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\platform.h)(0x5F05D2FC)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\driver\inc\tty.h)(0x5F04887D)
+F (..\user\public.c)(0x5F049072)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\public.o --omf_browse .\obj\public.crf --depend .\obj\public.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\public.h)(0x5F0488F6)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\user\stm32f4xx_it.c)(0x5F007B46)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\stm32f4xx_it.o --omf_browse .\obj\stm32f4xx_it.crf --depend .\obj\stm32f4xx_it.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_it.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)
+F (..\user\module\keywork.c)(0x5F048A85)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork -I..\driver\inc -I..\framework -I..\lib\CMSIS\Include -I..\lib\CMSIS\STM32F4xx\Include -I..\user -I..\user\module -I..\lib\STM32F4xx_StdPeriph_Driver\inc --c99;-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DSTM32F40XX-o .\obj\keywork.o --omf_browse .\obj\keywork.crf --depend .\obj\keywork.d)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\led.h)(0x5F0489AA)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\key.h)(0x5F007B43)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\module.h)(0x5F088840)
+I (G:\Design\workspace\develop\gitee\CodeBrick\framework\comdef.h)(0x5F086E4D)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\public.h)(0x5F0488F6)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4.h)(0x5F007B44)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmInstr.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cmFunc.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\Include\core_cm4_simd.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x5F007B44)
+I (G:\Design\workspace\develop\gitee\CodeBrick\user\stm32f4xx_conf.h)(0x5F007B46)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x5F007B45)
+I (G:\Design\workspace\develop\gitee\CodeBrick\lib\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5F007B45)

@@ -12,7 +12,7 @@
 #ifndef _MCU_FLASH_H_
 #define _MCU_FLASH_H_
 
-#include <ysizet.h>
+#include <stddef.h>
 
 int mcu_flash_erase(unsigned int addr, size_t size);
 int mcu_flash_write(unsigned int addr ,const void *buf, size_t size);

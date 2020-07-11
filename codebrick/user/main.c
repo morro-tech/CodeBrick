@@ -11,11 +11,12 @@
 
 #include "module.h"
 #include <stdio.h>
+
 /* 
  * @brief       主程序入口 
  * @return      none
  */
-void main(void)
+int main(void)
 {
     module_task_init();                         /*模块初始化*/
     while (1) {    

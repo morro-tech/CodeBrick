@@ -13,9 +13,11 @@
 #include "spi_flash.h"
 #include "public.h"
 #include <string.h>
-#include <intrinsics.h>
 
 /* flash ×´Ì¬×Ö---------------------------------------------------------------*/
+#if defined ( __CC_ARM   )
+#pragma anon_unions                                     //·ÀÖ¹MDKÄäÃûÀàĞÍ´íÎó
+#endif
 typedef union  {
 	unsigned char status;
 	struct {
@@ -34,12 +36,10 @@ typedef union  {
 void spi_flash_diselect(void)
 {
     GPIO_SetBits(GPIOB, GPIO_Pin_10); 
-    __no_operation();
 }
 void spi_flash_select(void)
 {
     GPIO_ResetBits(GPIOB, GPIO_Pin_10); 
-    __no_operation();
 }
 //spiĞ´
 static unsigned char spi_write_byte(unsigned char byte)

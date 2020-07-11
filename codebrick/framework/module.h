@@ -22,7 +22,7 @@
 typedef struct {
     const char *name;               //模块名称
     void (*init)(void);             //初始化接口
-}module_init_item_t;
+}init_item_t;
 
 /*任务处理项*/
 typedef struct {
@@ -32,9 +32,9 @@ typedef struct {
     unsigned int *timer;            //指向定时器指针
 }task_item_t;
 
-#define __module_initialize(name,func,section_name)     \
-RESERVE ANONY_TYPE(const module_init_item_t,func)       \
-SECTION("section_sys_init") UNUSED = {name,func}
+#define __module_initialize(name,func,level)           \
+    USED ANONY_TYPE(const init_item_t, init_tbl_##func)        \
+    SECTION("init.item."level) = {name,func}
 
 /*
  * @brief       任务注册
@@ -43,9 +43,9 @@ SECTION("section_sys_init") UNUSED = {name,func}
   * @param[in]  interval- 轮询间隔(ms)
  */
 #define task_register(name, handle,interval)           \
-    RESERVE static unsigned int __task_timer_##handle; \
-    RESERVE ANONY_TYPE(const task_item_t,handle)       \
-    SECTION("section_task_item") UNUSED =              \
+    static unsigned int __task_timer_##handle;         \
+    USED ANONY_TYPE(const task_item_t, handle)         \
+    SECTION("task.item.1") =                           \
     {name,handle, interval, &__task_timer_##handle}
 
 /*
@@ -53,15 +53,14 @@ SECTION("section_sys_init") UNUSED = {name,func}
  * @param[in]   name    - 模块名称 
  * @param[in]   func    - 初始化入口函数(void func(void){...})
  */
-#define system_init(name,func)  __module_initialize(name,func,"section_sys_init")
-#define driver_init(name,func)  __module_initialize(name,func,"section_drv_init")
-#define module_init(name,func)  __module_initialize(name,func,"section_app_init")
+#define system_init(name,func)  __module_initialize(name,func,"1")
+#define driver_init(name,func)  __module_initialize(name,func,"2")
+#define module_init(name,func)  __module_initialize(name,func,"3")
 
-void systick_increase(void);
+void systick_increase(unsigned int ms);
 unsigned int get_tick(void);
 bool is_timeout(unsigned int start, unsigned int timeout);
 void module_task_init(void);
 void module_task_process(void);
-
     
 #endif

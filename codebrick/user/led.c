@@ -76,7 +76,7 @@ static void led_io_init(void)
  */ 
 void led_ctrl(led_type type, int mode, int reapeat)
 {
-    int ontime, offtime;
+    int ontime = 0, offtime = 0;
     
     switch (mode) {                     /*根据工作模式得到led开关周期 ---------*/
     case LED_MODE_OFF:

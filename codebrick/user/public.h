@@ -21,4 +21,5 @@ void exti_conf(uint32_t Line, EXTITrigger_TypeDef Trigger, FunctionalState Cmd);
 void timer_conf(TIM_TypeDef* TIMx, unsigned int hz);
 
 void uart_conf(USART_TypeDef *port, int baudrate);
+
 #endif

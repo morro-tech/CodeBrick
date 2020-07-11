@@ -7,7 +7,7 @@
  *
  * Change Logs: 
  * Date           Author       Notes 
- * 2018-09-09     Morro         Initial version
+ * 2018-09-09     Morro        Initial version
  ******************************************************************************/
 #include "mcu_flash.h"
 #include "stm32f4xx.h"

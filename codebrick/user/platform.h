@@ -13,9 +13,6 @@
 #ifndef _PLATFORM_DEVICE_H_
 #define _PLATFORM_DEVICE_H_
 
-#include "stm32f4xx.h"
-#include "tty.h"
-#include "spi_flash.h"
 #include <stdbool.h>
 
 #define SYS_TICK_INTERVAL                   10             /*ÏµÍ³µÎ´ð¼ä¸ô(ms) */    

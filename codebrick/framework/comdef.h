@@ -1,11 +1,15 @@
-/*******************************************************************************
-* @brief	通用宏定义
-*
-* Change Logs: 
-* Date           Author       Notes 
-* 2018-03-18     Morro     Initial version. 
-*******************************************************************************/
-
+/******************************************************************************
+ * @brief    通用宏定义
+ *
+ * Copyright (c) 2018~2020, <master_roger@sina.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs: 
+ * Date           Author       Notes 
+ * 2018-02-01     Morro        Initial version. 
+ ******************************************************************************/
+ 
 #ifndef _COM_DEF_H_
 #define _COM_DEF_H_
 
@@ -16,7 +20,7 @@ extern "C" {
 /*匿名类型定义 -----------------------------------------------------------*/
 #define  ANONY_CONN(type, var, line)  type  var##line
 #define  ANONY_DEF(type,prefix,line)  ANONY_CONN(type, prefix, line)
-#define  ANONY_TYPE(type,prefix)      ANONY_DEF(type,prefix, __LINE__)
+#define  ANONY_TYPE(type,prefix)      ANONY_DEF(type, prefix, __LINE__)
 
 /**
  * container_of - cast a member of a structure out to the containing structure
@@ -29,18 +33,19 @@ extern "C" {
 	(type *)( (char *)(ptr) - offsetof(type,member) ))
 
 
-#ifdef __CC_ARM                          /* ARM Compiler    */
+#if defined(__CC_ARM) || defined(__GNUC__) /* ARM,GCC*/
     #define SECTION(x)                  __attribute__((section(x)))
     #define UNUSED                      __attribute__((unused))
-    #define RESERVE                     
-#elif defined (__ICCARM__)              /* for IAR Compiler */
+    #define USED                        __attribute__((used))
+    #define ALIGN(n)                    __attribute__((aligned(n)))
+    #define WEAK                        __attribute__((weak))
+#elif defined (__ICCARM__)              /*IAR */
     #define SECTION(x)                  @ x
-    #define UNUSED
-    #define RESERVE                     __root
-#elif defined (__GNUC__)                /* GNU GCC Compiler */
-    #define SECTION(x)                  __attribute__((section(x)))
-    #define UNUSED                      __attribute__((unused))
-    #define RESERVE 
+    #define UNUSED                      
+    #define USED                        __root
+    #define WEAK                        __weak
+#else
+    #error "Current tool chain haven't supported yet!"
 #endif
 
 #ifdef __cplusplus

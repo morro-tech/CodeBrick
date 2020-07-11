@@ -1947,6 +1947,9 @@
     <file>
       <name>$PROJ_DIR$\..\framework\ringbuffer.c</name>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\framework\shell.c</name>
+    </file>
   </group>
   <group>
     <name>lib</name>

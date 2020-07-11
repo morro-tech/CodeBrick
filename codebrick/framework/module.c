@@ -12,49 +12,16 @@
  * 2020-06-28     Morro        增加is_timeout超时判断接口
  ******************************************************************************/
 #include "module.h"
- 
-/*
- * 根据编译器特性得到初始化及任务数据段的开始/结束地址
- */
-#ifdef __CC_ARM                			 /* ARM Compiler 	*/	
-    extern task_item_t        section_task_item$$Base;           
-    extern task_item_t        section_task_item$$Limit;		
-	#define task_tbl_start    &section_task_item$$Base    
-	#define task_tbl_end      &section_task_item$$Limit 
-	
-    extern module_init_item_t section_sys_init$$Base;
-    extern module_init_item_t section_sys_init$$Limit;		
-	#define sys_init_start    &section_sys_init$$Base    
-	#define sys_init_end      &section_sys_init$$Limit 
-	
-#elif defined (__ICCARM__)        		/* for IAR Compiler */
-	#pragma section="section_task_item"
-	#define task_tbl_start  __section_begin("section_task_item")        
-	#define task_tbl_end    __section_end("section_task_item")  
-	
-	#pragma section="section_sys_init"
-	#define sys_init_start  __section_begin("section_sys_init")
-	#define sys_init_end    __section_end("section_sys_init")
-    
-	#pragma section="section_drv_init"
-	#define drv_init_start  __section_begin("section_drv_init")
-	#define drv_init_end    __section_end("section_drv_init")    
-    
-	#pragma section="section_app_init"
-	#define app_init_start  __section_begin("section_app_init")
-	#define app_init_end    __section_end("section_app_init")     
-
-#endif
 
 
 static volatile unsigned int tick;               //系统滴答计时
 
 /*
- * @brief       增加系统节拍数(定时器中断中调用,1ms 1次)
+ * @brief   增加系统节拍数(定时器中断中调用,1ms 1次)
  */
-void systick_increase(void)
+void systick_increase(unsigned int ms)
 {
-	tick++;
+	tick += ms;
 }
 
 /*
@@ -75,6 +42,28 @@ bool is_timeout(unsigned int start, unsigned int timeout)
     return get_tick() - start > timeout;
 }
 
+/*
+ * @brief       空处理,用于定位段入口
+ */
+static void nop_process(void) {}
+    
+//第一个初始化项
+const init_item_t init_tbl_start SECTION("init.item.0") = {     
+    "", nop_process
+};
+//最后个初始化项
+const init_item_t init_tbl_end SECTION("init.item.4") = {       
+    "", nop_process
+};
+
+//第一个任务项
+const task_item_t task_tbl_start SECTION("task.item.0") = {     
+    "", nop_process
+};
+//最后个任务项
+const task_item_t task_tbl_end SECTION("task.item.2") = {       
+    "", nop_process
+};
 
 /*
  * @brief       模块初始处理
@@ -84,21 +73,12 @@ bool is_timeout(unsigned int start, unsigned int timeout)
  */
 void module_task_init(void)
 {
-    module_init_item_t *m;
-    for (m = (module_init_item_t *)sys_init_start;
-         m < (module_init_item_t *)sys_init_end; m++) {    //系统模块初始化
-        m->init();
-    } 
-    for (m = (module_init_item_t *)drv_init_start;
-         m < (module_init_item_t *)drv_init_end; m++) {    //驱动模块初始化
-        m->init();
-    } 
-    for (m = (module_init_item_t *)app_init_start;
-         m < (module_init_item_t *)app_init_end; m++) {    //应用模块初始化
-        m->init();
-    }     
+    const init_item_t *it = &init_tbl_start;
+    while (it < &init_tbl_end) {
+        it++->init();
+    }
 }
- 
+
 /*
  * @brief       任务轮询处理
  * @param[in]   none
@@ -106,20 +86,11 @@ void module_task_init(void)
  */
 void module_task_process(void)
 {
-    task_item_t *t;
-    for (t = (task_item_t *)task_tbl_start; 
-         t < (task_item_t*)task_tbl_end; t++) {      
+    const task_item_t *t;
+    for (t = &task_tbl_start; t < &task_tbl_end; t++) {
         if  ((get_tick() - *t->timer) >= t->interval) {
             *t->timer = get_tick();
             t->handle();
         }
-    } 
+    }
 }
-
-
-
-
-
-		
-		
-		

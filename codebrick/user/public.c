@@ -38,7 +38,7 @@ void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode,GPIOPuPd_TypeDef PuPd,
         clock = RCC_AHB1Periph_GPIOD;  
     else if (GPIOx == GPIOE)
         clock = RCC_AHB1Periph_GPIOE;   
-    else if (GPIOx == GPIOF)
+    else 
         clock = RCC_AHB1Periph_GPIOF;
     
     RCC_AHB1PeriphClockCmd(clock, ENABLE);
@@ -97,9 +97,9 @@ void timer_conf(TIM_TypeDef* TIMx, unsigned int hz)
     config.TIM_Prescaler = 1;
     if (TIMx == TIM1 || TIMx == TIM8 || TIMx == TIM9 || 
         TIMx == TIM10|| TIMx == TIM11)
-        Period = (float)Clocks.PCLK2_Frequency / hz + 0.5;     
+        Period = (float)(Clocks.PCLK2_Frequency / hz + 0.5);     
     else 
-        Period = (float)Clocks.PCLK1_Frequency / hz + 0.5;   
+        Period = (float)(Clocks.PCLK1_Frequency / hz + 0.5);   
 
     config.TIM_Period = (uint32_t)Period - 1;    
     config.TIM_ClockDivision = 0;

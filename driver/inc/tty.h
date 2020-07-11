@@ -18,11 +18,13 @@
 
 /*接口声明 --------------------------------------------------------------------*/
 typedef struct {
-    void (*init)(int baudrate);                                    
+    void (*init)(int baudrate);                                   
     unsigned int (*write)(const void *buf, unsigned int len);    
-    unsigned int (*read)(void *buf, unsigned int len);
+    unsigned int (*read)(void *buf, unsigned int len);           
+    bool (*tx_isfull)(void);                                    /*发送缓冲区满*/
+    bool (*rx_isempty)(void);                                   /*接收缓冲区空*/
 }tty_t;
 
-extern const  tty_t tty;
+extern const tty_t tty;
 
 #endif

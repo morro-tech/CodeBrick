@@ -10,8 +10,8 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
-#define SW_VER     "1.00"
-#define HW_VER     "1.00"
+#define APP_ADDRESS      0x08004000                    //应用程序开始地址
 
+#define SW_VER           "1.00"                        //软件版本号
 
 #endif

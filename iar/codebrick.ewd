@@ -45,7 +45,7 @@
         </option>
         <option>
           <name>MemFile</name>
-          <state></state>
+          <state>$TOOLKIT_DIR$\CONFIG\debugger\ST\STM32F405VG.ddf</state>
         </option>
         <option>
           <name>RunToEnable</name>
@@ -77,7 +77,7 @@
         </option>
         <option>
           <name>OCDownloadVerifyAll</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OCProductVersion</name>
@@ -85,7 +85,7 @@
         </option>
         <option>
           <name>OCDynDriverList</name>
-          <state>ARMSIM_ID</state>
+          <state>STLINK_ID</state>
         </option>
         <option>
           <name>OCLastSavedByProductVersion</name>
@@ -97,7 +97,7 @@
         </option>
         <option>
           <name>UseFlashLoader</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CLowLevel</name>
@@ -117,7 +117,7 @@
         </option>
         <option>
           <name>FlashLoadersV3</name>
-          <state>$TOOLKIT_DIR$\config\flashloader\</state>
+          <state>$TOOLKIT_DIR$\config\flashloader\ST\FlashSTM32F4xxx.board</state>
         </option>
         <option>
           <name>OCImagesSuppressCheck1</name>
@@ -603,7 +603,7 @@
         </option>
         <option>
           <name>IjetCpuClockEdit</name>
-          <state>72.0</state>
+          <state>168.0</state>
         </option>
         <option>
           <name>IjetSwoPrescalerList</name>
@@ -853,7 +853,7 @@
         <option>
           <name>CCJLinkResetList</name>
           <version>6</version>
-          <state>5</state>
+          <state>7</state>
         </option>
         <option>
           <name>CCJLinkInterfaceCmdLine</name>
@@ -1202,7 +1202,7 @@
         </option>
         <option>
           <name>CCSTLinkInterfaceRadio</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCSTLinkInterfaceCmdLine</name>

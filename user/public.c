@@ -15,11 +15,11 @@
  * @brief       GPIO≈‰÷√
  * @return      none
  */ 
-void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode,GPIOPuPd_TypeDef PuPd,
+void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode, GPIOPuPd_TypeDef PuPd,
                uint32_t Pins)
 {
     uint32_t         clock;
-    GPIO_InitTypeDef config = {0};
+    GPIO_InitTypeDef config;
     config.GPIO_Pin   = Pins;
     config.GPIO_Mode  = Mode;
     config.GPIO_OType = GPIO_OType_PP;
@@ -125,5 +125,8 @@ void uart_conf(USART_TypeDef *port, int baudrate)
     config.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     config.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
     USART_Init(port, &config);
+    USART_ITConfig(port, USART_IT_RXNE, ENABLE);
+ 	USART_ITConfig(port, USART_IT_ERR, ENABLE);
+	USART_Cmd(port, ENABLE);      
 
 }

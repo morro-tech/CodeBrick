@@ -38,8 +38,10 @@ static void uart_init(int baudrate)
     ring_buf_init(&rbsend, txbuf, sizeof(txbuf));/*初始化环形缓冲区 */
     ring_buf_init(&rbrecv, rxbuf, sizeof(rxbuf)); 
     
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA , ENABLE);
+    
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_USART1);
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);    
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);  
     
     gpio_conf(GPIOA, GPIO_Mode_AF, GPIO_PuPd_NOPULL, 
               GPIO_Pin_9 | GPIO_Pin_10);

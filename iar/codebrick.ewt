@@ -2109,6 +2109,9 @@
       <name>$PROJ_DIR$\..\framework\blink.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\framework\cli.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\framework\key.c</name>
     </file>
     <file>
@@ -2175,9 +2178,18 @@
   <group>
     <name>user</name>
     <group>
-      <name>module</name>
+      <name>cmd</name>
       <file>
-        <name>$PROJ_DIR$\..\user\module\keywork.c</name>
+        <name>$PROJ_DIR$\..\user\cmd\cmd_devinfo.c</name>
+      </file>
+    </group>
+    <group>
+      <name>task</name>
+      <file>
+        <name>$PROJ_DIR$\..\user\task\cli_task.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\user\task\task_key.c</name>
       </file>
     </group>
     <file>

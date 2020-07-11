@@ -33,7 +33,7 @@ typedef struct {
 }task_item_t;
 
 #define __module_initialize(name,func,level)           \
-    USED ANONY_TYPE(const init_item_t, init_tbl_##func)        \
+    USED ANONY_TYPE(const init_item_t, init_tbl_##func)\
     SECTION("init.item."level) = {name,func}
 
 /*
@@ -42,10 +42,10 @@ typedef struct {
  * @param[in]   handle  - 初始化处理(void func(void){...})
   * @param[in]  interval- 轮询间隔(ms)
  */
-#define task_register(name, handle,interval)           \
-    static unsigned int __task_timer_##handle;         \
-    USED ANONY_TYPE(const task_item_t, handle)         \
-    SECTION("task.item.1") =                           \
+#define task_register(name, handle,interval)                \
+    static unsigned int __task_timer_##handle;              \
+    USED ANONY_TYPE(const task_item_t, task_item_##handle)  \
+    SECTION("task.item.1") =                                \
     {name,handle, interval, &__task_timer_##handle}
 
 /*

@@ -12,7 +12,7 @@
 //定时器中断(提供系统滴答)
 void timer_interrupt(void)
 {
-    systick_increase();        //增加系统节拍
+    systick_increase(SYS_TICK_INTERVAL); //增加系统节拍
 }
 ```
 2.任务初始化及注册(以按键扫描为例)

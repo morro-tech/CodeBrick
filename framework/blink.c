@@ -49,7 +49,7 @@ void blink_dev_create(blink_dev_t *dev, void (*ioctrl)(bool enable))
 void blink_dev_ctrl(blink_dev_t *dev, int ontime, int offtime, int repeats)
 {
     dev->ontime  = ontime;
-    dev->offtime = offtime + ontime;
+    dev->offtime = offtime + ontime;                  
     dev->repeats = repeats;
     dev->tick    = get_tick();
     dev->count   = 0;
@@ -75,7 +75,7 @@ void blink_dev_process(void)
                 dev->enable = true;
                 dev->ioctrl(true);
             }
-        } else if(get_tick() - dev->tick < dev->offtime) {
+        } else if(get_tick() - dev->tick < dev->offtime) {    /**/
             if (dev->enable) {
                 dev->enable = false;
                 dev->ioctrl(false);

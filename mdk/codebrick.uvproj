@@ -442,6 +442,11 @@
               <FileType>1</FileType>
               <FilePath>..\framework\ringbuffer.c</FilePath>
             </File>
+            <File>
+              <FileName>cli.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\framework\cli.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -550,12 +555,27 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>module</GroupName>
+          <GroupName>user/task</GroupName>
           <Files>
             <File>
-              <FileName>keywork.c</FileName>
+              <FileName>cli_task.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user\module\keywork.c</FilePath>
+              <FilePath>..\user\task\cli_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\task\task_key.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>user/cmd</GroupName>
+          <Files>
+            <File>
+              <FileName>cmd_devinfo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\cmd\cmd_devinfo.c</FilePath>
             </File>
           </Files>
         </Group>

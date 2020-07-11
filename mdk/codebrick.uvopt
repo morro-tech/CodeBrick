@@ -209,7 +209,7 @@
 
   <Group>
     <GroupName>driver</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -237,8 +237,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\driver\src\tty.c</PathWithFileName>
       <FilenameWithoutPath>tty.c</FilenameWithoutPath>
@@ -259,10 +259,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>23</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>2</TopLine>
+      <CurrentLine>10</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\framework\blink.c</PathWithFileName>
       <FilenameWithoutPath>blink.c</FilenameWithoutPath>
@@ -291,10 +291,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>32</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>44</TopLine>
-      <CurrentLine>51</CurrentLine>
+      <TopLine>32</TopLine>
+      <CurrentLine>34</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\framework\module.c</PathWithFileName>
       <FilenameWithoutPath>module.c</FilenameWithoutPath>
@@ -333,24 +333,40 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>9</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>16</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>34</TopLine>
+      <CurrentLine>16</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\framework\cli.c</PathWithFileName>
+      <FilenameWithoutPath>cli.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
     <GroupName>CMSIS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>9</FileNumber>
+      <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>67</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\lib\CMSIS\STM32F4xx\Source\system_stm32f4xx.c</PathWithFileName>
       <FilenameWithoutPath>system_stm32f4xx.c</FilenameWithoutPath>
@@ -361,13 +377,13 @@
 
   <Group>
     <GroupName>StdPeriph_Driver</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>10</FileNumber>
+      <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -383,7 +399,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>11</FileNumber>
+      <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -399,7 +415,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>12</FileNumber>
+      <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -415,7 +431,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>13</FileNumber>
+      <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -431,7 +447,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>14</FileNumber>
+      <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -447,7 +463,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>15</FileNumber>
+      <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -463,7 +479,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>16</FileNumber>
+      <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -479,7 +495,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>17</FileNumber>
+      <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -495,7 +511,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>18</FileNumber>
+      <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -511,7 +527,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>19</FileNumber>
+      <FileNumber>20</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -527,7 +543,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>20</FileNumber>
+      <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -543,7 +559,7 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>21</FileNumber>
+      <FileNumber>22</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -567,14 +583,14 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>22</FileNumber>
+      <FileNumber>23</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>63</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
@@ -583,7 +599,7 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>23</FileNumber>
+      <FileNumber>24</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -599,14 +615,14 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>24</FileNumber>
+      <FileNumber>25</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>2</ColumnNumber>
+      <ColumnNumber>3</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>10</TopLine>
-      <CurrentLine>7</CurrentLine>
+      <TopLine>16</TopLine>
+      <CurrentLine>22</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user\platform.c</PathWithFileName>
       <FilenameWithoutPath>platform.c</FilenameWithoutPath>
@@ -615,7 +631,7 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>25</FileNumber>
+      <FileNumber>26</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -631,7 +647,7 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>26</FileNumber>
+      <FileNumber>27</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -648,14 +664,14 @@
   </Group>
 
   <Group>
-    <GroupName>module</GroupName>
+    <GroupName>user/task</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>27</FileNumber>
+      <FileNumber>28</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -664,8 +680,48 @@
       <TopLine>0</TopLine>
       <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\user\module\keywork.c</PathWithFileName>
-      <FilenameWithoutPath>keywork.c</FilenameWithoutPath>
+      <PathWithFileName>..\user\task\cli_task.c</PathWithFileName>
+      <FilenameWithoutPath>cli_task.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>29</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\user\task\task_key.c</PathWithFileName>
+      <FilenameWithoutPath>task_key.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>user/cmd</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>30</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\user\cmd\cmd_devinfo.c</PathWithFileName>
+      <FilenameWithoutPath>cmd_devinfo.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

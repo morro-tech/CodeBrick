@@ -28,7 +28,7 @@ void SysTick_Handler(void)
 /*
  * @brief	   ÷ÿ∂®œÚprintf
  */
-int putchar(int c)
+int fputc(int c, FILE *f)
 {    
     unsigned char byte = c;
     tty.write(&byte, 1);     

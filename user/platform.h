@@ -15,7 +15,7 @@
 
 #include <stdbool.h>
 
-#define SYS_TICK_INTERVAL                   10             /*系统滴答间隔(ms) */    
+#define SYS_TICK_INTERVAL                10              /*系统滴答时间(ms) */    
 
 bool is_timeout(unsigned int start, unsigned int timeout);
 

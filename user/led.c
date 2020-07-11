@@ -23,9 +23,9 @@ static blink_dev_t led[LED_TYPE_MAX];               /*定义led设备 ------------*/
 static void red_led_ctrl(bool level)
 {
     if (level)
-        GPIOB->ODR |= 1 << 4;
+        GPIOC->ODR |= 1 << 4;
     else 
-        GPIOB->ODR &= ~(1 << 4);
+        GPIOC->ODR &= ~(1 << 4);
 }
 
 /* 
@@ -35,9 +35,9 @@ static void red_led_ctrl(bool level)
 static void green_led_ctrl(bool level)
 {
     if (level)
-        GPIOB->ODR |= 1 << 5;
+        GPIOC->ODR |= 1 << 5;
     else 
-        GPIOB->ODR &= ~(1 << 5);    
+        GPIOC->ODR &= ~(1 << 5);    
 }
 
 /* 
@@ -58,6 +58,8 @@ static void blue_led_ctrl(bool level)
  */ 
 static void led_io_init(void)
 {
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB , ENABLE);
+    
     gpio_conf(GPIOB, GPIO_Mode_OUT, GPIO_PuPd_NOPULL, GPIO_Pin_4);
     gpio_conf(GPIOB, GPIO_Mode_OUT, GPIO_PuPd_NOPULL, GPIO_Pin_5);
     gpio_conf(GPIOB, GPIO_Mode_OUT, GPIO_PuPd_NOPULL, GPIO_Pin_6);
@@ -65,6 +67,12 @@ static void led_io_init(void)
     blink_dev_create(&led[LED_TYPE_RED], red_led_ctrl);
     blink_dev_create(&led[LED_TYPE_GREEN], green_led_ctrl);
     blink_dev_create(&led[LED_TYPE_BLUE], blue_led_ctrl);
+
+    /*开机闪3下*/
+    led_ctrl(LED_TYPE_RED, LED_MODE_FAST, 3);
+    led_ctrl(LED_TYPE_GREEN, LED_MODE_FAST, 3);
+    led_ctrl(LED_TYPE_BLUE, LED_MODE_FAST, 3);
+    
 }
 
 /* 
@@ -100,4 +108,4 @@ void led_ctrl(led_type type, int mode, int reapeat)
 
 
 driver_init("led", led_io_init);                     /*驱动初始化*/
-task_register("led", blink_dev_process, 100);        /*led任务, 100ms轮询1次*/
+task_register("led", blink_dev_process, 10);         /*led任务, 10ms轮询1次*/

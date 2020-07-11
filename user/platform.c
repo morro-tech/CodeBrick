@@ -30,7 +30,9 @@ void SysTick_Handler(void)
  */
 int putchar(int c)
 {    
-    tty.write(&c, 1);
+    unsigned char byte = c;
+    tty.write(&byte, 1);     
+    //tty.write(&c, 1);
     while (tty.tx_isfull()) {}                           //防止丢LOG
     return c;
 }
@@ -45,7 +47,7 @@ static void bsp_init(void)
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  
     tty.init(115200);
     SystemCoreClockUpdate();
- 	SysTick_Config(SystemCoreClock / SYS_TICK_INTERVAL);  //配置系统时钟
+ 	SysTick_Config(SystemCoreClock / (1000 / SYS_TICK_INTERVAL));   //配置系统时钟
 	NVIC_SetPriority(SysTick_IRQn, 0);
     
 }system_init("bsp", bsp_init); 

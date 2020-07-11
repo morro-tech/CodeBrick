@@ -24,9 +24,8 @@
 #define __STM32F4xx_CONF_H
 
 #if defined  (HSE_VALUE)
-/* Redefine the HSE value; it's equal to 12 MHz on the GL300W */
  #undef HSE_VALUE
- #define HSE_VALUE    ((uint32_t)12000000) 
+ #define HSE_VALUE    ((uint32_t)12000000)
 #endif /* HSE_VALUE */
 
 /* Includes ------------------------------------------------------------------*/

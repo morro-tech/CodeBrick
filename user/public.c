@@ -18,7 +18,6 @@
 void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode, GPIOPuPd_TypeDef PuPd,
                uint32_t Pins)
 {
-    uint32_t         clock;
     GPIO_InitTypeDef config;
     config.GPIO_Pin   = Pins;
     config.GPIO_Mode  = Mode;
@@ -26,22 +25,6 @@ void gpio_conf(GPIO_TypeDef* GPIOx, GPIOMode_TypeDef Mode, GPIOPuPd_TypeDef PuPd
     config.GPIO_Speed = GPIO_Speed_50MHz;
     config.GPIO_PuPd  = PuPd;
     GPIO_Init(GPIOx, &config);
-    
-    /*´ò¿ªGPIOÊ±ÖÓ*/
-    if (GPIOx == GPIOA)
-        clock = RCC_AHB1Periph_GPIOA;
-    else if (GPIOx == GPIOB)
-        clock = RCC_AHB1Periph_GPIOB;
-    else if (GPIOx == GPIOC)
-        clock = RCC_AHB1Periph_GPIOC;
-    else if (GPIOx == GPIOD)
-        clock = RCC_AHB1Periph_GPIOD;  
-    else if (GPIOx == GPIOE)
-        clock = RCC_AHB1Periph_GPIOE;   
-    else 
-        clock = RCC_AHB1Periph_GPIOF;
-    
-    RCC_AHB1PeriphClockCmd(clock, ENABLE);
 }
 
 
@@ -127,6 +110,7 @@ void uart_conf(USART_TypeDef *port, int baudrate)
     USART_Init(port, &config);
     USART_ITConfig(port, USART_IT_RXNE, ENABLE);
  	USART_ITConfig(port, USART_IT_ERR, ENABLE);
+
 	USART_Cmd(port, ENABLE);      
 
 }

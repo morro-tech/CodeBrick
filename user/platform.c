@@ -29,10 +29,8 @@ void SysTick_Handler(void)
  * @brief	   ÖØ¶¨Ïòprintf
  */
 int fputc(int c, FILE *f)
-{    
-    unsigned char byte = c;
-    tty.write(&byte, 1);     
-    //tty.write(&c, 1);
+{       
+    tty.write(&c, 1);
     while (tty.tx_isfull()) {}                           //·ÀÖ¹¶ªLOG
     return c;
 }

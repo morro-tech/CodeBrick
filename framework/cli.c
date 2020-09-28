@@ -25,7 +25,7 @@ static const cmd_item_t cmd_tbl_end SECTION("cli.cmd.4") = {0};
 /*
  * @brief       查找命令
  * @param[in]   keyword - 命令关键字
- * @return      命令向
+ * @return      命令项
  */ 
 static const cmd_item_t *find_cmd(const char *keyword)
 {                   
@@ -104,31 +104,31 @@ void cli_init(cli_obj_t *obj, const cli_port_t *p)
     obj->enable = true;
 }
 
-/*******************************************************************************
+/*
  * @brief       进入cli命令模式(cli此时自动处理用户输入的命令)
  * @param[in]   none
  * @return      none
- ******************************************************************************/
+ **/
 void cli_enable(cli_obj_t *obj)
 {
     obj->enable = true;
 }
 
-/*******************************************************************************
+/*
  * @brief       退出cli命令模式(cli此时不再处理用户输入的命令)
  * @param[in]   none
  * @return      none
- ******************************************************************************/
+ **/
 void cli_disable (cli_obj_t *obj)
 {
     obj->enable = false;
 }
 
-/*******************************************************************************
- * @brief       解析一行
+/*
+ * @brief       处理行
  * @param[in]   line - 命令行
  * @return      none
- ******************************************************************************/
+ **/
 static void process_line(cli_obj_t *obj)
 {
     char *argv[CLI_MAX_ARGS];
@@ -142,22 +142,22 @@ static void process_line(cli_obj_t *obj)
     it->handler(obj, argc, argv);
 }
 
-/*******************************************************************************
+/*
  * @brief       执行一行命令(无论cli是否运行,都会执行)
  * @param[in]   none
  * @return      none
- ******************************************************************************/
+ **/
 void cli_exec_cmd(cli_obj_t *obj, const char *cmd)
 {
     snprintf(obj->recvbuf, CLI_MAX_CMD_LEN, "%s", cmd);
     process_line(obj);
 }
 
-/*******************************************************************************
- * @brief       运行cli
+/*
+ * @brief       命令行处理程序
  * @param[in]   none
  * @return      none
- ******************************************************************************/
+ **/
 void cli_process(cli_obj_t *obj)
 {
     
@@ -191,8 +191,6 @@ static int cmd_item_comparer(const void *item1,const void *item2)
 
 /*
  * @brief	   帮助命令
- * @param[in]   
- * @return 	   1
  */
 static int do_help (struct cli_obj *s, int argc, char *argv[])
 {

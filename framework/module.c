@@ -10,6 +10,8 @@
  * 2016-06-24     Morro        初版完成
  * 2020-05-23     Morro        增加匿名类型,防止模块重名错误
  * 2020-06-28     Morro        增加is_timeout超时判断接口
+ * 2020-09-28     Morro        解决伪任务项未初始化timer，导致引用了空指针的问题！
+ *                             
  ******************************************************************************/
 #include "module.h"
 
@@ -87,7 +89,7 @@ void module_task_init(void)
 void module_task_process(void)
 {
     const task_item_t *t;
-    for (t = &task_tbl_start; t < &task_tbl_end; t++) {
+    for (t = &task_tbl_start + 1; t < &task_tbl_end; t++) {
         if  ((get_tick() - *t->timer) >= t->interval) {
             *t->timer = get_tick();
             t->handle();

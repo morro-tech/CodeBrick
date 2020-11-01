@@ -1,10 +1,10 @@
 # CodeBrick
 
 ## 介绍
-一种无OS的单片机通用解决方案，包括任务轮询框架，命令管理器、低功耗管理、环形缓冲区等实用模块。
+一种无OS的MCU实用软件管理系统，包括任务轮询框架，命令管理器、低功耗管理、环形缓冲区等实用模块。
 
 ### module模块
-  时间轮询框架，使用例子：
+  时间轮询框架，统一管理设备所有任务模块,使用例子：
  
 1.使用此模块前需要系统提供滴答定时器，用于驱动任务轮询作业
 
@@ -32,8 +32,46 @@ module_init("key", key_init);            //注册按键初始化接口
 task_register("key", key_scan, 20);      //注册按键任务(20ms轮询1次)
 ```
 
+### 命令管理器(cli)
+  适用于设备间通信、在线调试、参数配置等, 使用例子(参考cli_task.c)：
+ 
+1. 定义命令行管理器
 
-  
+```
+static cli_obj_t cli;                               /*命令行对象 */
+```
+2.命令行初始化及接口适配
+
+```
+/* 
+ * @brief       命令行任务初始化
+ * @return      none
+ */ 
+static void cli_task_init(void)
+{
+    cli_port_t p = {tty.write, tty.read};           /*使用串口进行适配 */
+    
+    cli_init(&cli, &p);                             /*初始化命令行对象 */
+     
+    cli_enable(&cli);    
+}
+module_init("cli", cli_task_init);                   
+```
+
+3.命令行任务轮询
+```
+/* 
+ * @brief       命令行任务处理
+ * @return      none
+ */ 
+static void cli_task_process(void)
+{
+    cli_process(&cli);
+}
+                
+task_register("cli", cli_task_process, 10);       /*注册命令行任务*/
+```
+
 ### comdef模块
 包含常用宏定义,段定义、匿名类型等。
 

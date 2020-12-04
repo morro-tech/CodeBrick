@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief        异步作业
  *
- * Copyright (c) 2020, <master_roger@sina.com>
+ * Copyright (c) 2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -77,7 +77,7 @@ bool async_work_add(async_work_t *w, void *object, void *params,
     if (n == NULL)
         return false;
     n->object = object;
-    n->params = params;
+    n->params = params;l;;;;;;;;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     n->work   = work;
     
     workqueue_put(&w->ready, n);               /*加入到就绪链表*/          

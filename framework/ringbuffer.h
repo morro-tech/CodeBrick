@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    环形缓冲区管理(参考linux/kfifo)
  *
- * Copyright (c) 2016~2020, <master_roger@sina.com>
+ * Copyright (c) 2016~2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *

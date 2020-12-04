@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    系统配置文件
  *
- * Copyright (c) 2019, <master_roger@sina.com>
+ * Copyright (c) 2019, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *

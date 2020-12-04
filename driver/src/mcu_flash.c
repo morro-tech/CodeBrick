@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    ST mcu Æ¬ÉÏflash²Ù×÷
  *
- * Copyright (c) 2018~2020, <master_roger@sina.com>
+ * Copyright (c) 2018~2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *

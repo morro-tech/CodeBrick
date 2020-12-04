@@ -1,6 +1,9 @@
 /*******************************************************************************
 * @brief	      链式队列(queue link)管理
 *
+* Copyright (c) 2017~2020, <morro_luo@163.com>
+*
+* SPDX-License-Identifier: Apache-2.0
 * Change Logs 
 * Date           Author       Notes 
 * 2016-06-24     Morro        初始版

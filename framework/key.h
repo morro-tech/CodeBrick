@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    独立按键管理
  *
- * Copyright (c) 2017~2020, <master_roger@sina.com>
+ * Copyright (c) 2017~2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *

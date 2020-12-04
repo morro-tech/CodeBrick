@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    系统模块管理(包含系统初始化,时间片轮询系统)
  *
- * Copyright (c) 2017~2020, <master_roger@sina.com>
+ * Copyright (c) 2017~2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *

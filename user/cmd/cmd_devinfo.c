@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    设备相关命令
  *
- * Copyright (c) 2020, <master_roger@sina.com>
+ * Copyright (c) 2020, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -27,7 +27,7 @@ static int do_sysinfo_handler(struct cli_obj *o, int argc, char *argv[])
     printf("|  | Project Name :        CODEBRICK                        | |\r\n");
     printf("|  |--------------------------------------------------------| |\r\n");
     printf("|  | Author      :  Morro                                   | |\r\n");
-    printf("|  | Contact     :  <master_roger@sina.com>                 | |\r\n");
+    printf("|  | Contact     :  <morro_luo@163.com>                 | |\r\n");
     printf("|  |                                                        | |\r\n");
     printf("|  |                               Oooo                     | |\r\n");  
     printf("|  +---------------------- oooO---(   )---------------------+ |\r\n");

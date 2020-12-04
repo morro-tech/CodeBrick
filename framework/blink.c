@@ -1,7 +1,7 @@
 /******************************************************************************
  * @brief    具有闪烁特性(dev, motor, buzzer)的设备(dev, motor, buzzer)管理
  *
- * Copyright (c) 2019, <master_roger@sina.com>
+ * Copyright (c) 2019, <morro_luo@163.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  *
